@@ -1,0 +1,3 @@
+server:
+  error:
+    include-stracktrace: on-param
