@@ -32,10 +32,19 @@
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
+    <open-files>
+      <object connection-id="f5820b59-93fc-4fe7-8541-d42eac7210e2" object-ref="schemas/anime/tables/anime" />
+    </open-files>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="f5820b59-93fc-4fe7-8541-d42eac7210e2" />
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="f5820b59-93fc-4fe7-8541-d42eac7210e2" dataset="anime.anime" active-filter-id="EMPTY_FILTER">
+      <filter id="5e00f007-c51f-4c6d-b319-4cc87d606012" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="id" operator="=" value="" active="true" />
+      </filter>
+    </filter-actions>
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />

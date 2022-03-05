@@ -17,10 +17,8 @@ import java.util.List;
 public class  AnimeServices {
 
     private final AnimeRepository animeRepository;
-    public List<Anime> listAll(){
-
-        return animeRepository.findAll();
-    }
+    public List<Anime> listAll(){ return animeRepository.findAll(); }
+    public List<Anime> findByName(String name){ return animeRepository.findByName(name); }
 
     public Anime findByIdOrThrownBadRequestException(long id){
         return animeRepository.findById(id)
