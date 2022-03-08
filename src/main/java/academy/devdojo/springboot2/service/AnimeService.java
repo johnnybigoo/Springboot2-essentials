@@ -15,7 +15,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class  AnimeServices {
+public class AnimeService {
 
     private final AnimeRepository animeRepository;
     public List<Anime> listAll(){ return animeRepository.findAll(); }
