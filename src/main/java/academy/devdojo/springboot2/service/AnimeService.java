@@ -7,11 +7,13 @@ import academy.devdojo.springboot2.repository.AnimeRepository;
 import academy.devdojo.springboot2.requests.AnimePostRequestBody;
 import academy.devdojo.springboot2.requests.AnimePutRequestBody;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
 import javax.transaction.Transactional;
+import java.awt.print.Pageable;
 import java.util.List;
 
 @Service
@@ -19,7 +21,10 @@ import java.util.List;
 public class AnimeService {
 
     private final AnimeRepository animeRepository;
-    public List<Anime> listAll(){ return animeRepository.findAll(); }
+    public Page<Anime> listAll(Pageable pageable){
+        return animeRepository.findAll((org.springframework.data.domain.Pageable) pageable);
+    }
+
     public List<Anime> findByName(String name){ return animeRepository.findByName(name); }
 
     public Anime findByIdOrThrownBadRequestException(long id){

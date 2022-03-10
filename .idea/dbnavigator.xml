@@ -28,7 +28,16 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="f5820b59-93fc-4fe7-8541-d42eac7210e2">
-      <console name="@localhost" type="STANDARD" schema="mysql" session="Main" />
+      <console name="@localhost" type="STANDARD" schema="anime" session="Main"><![CDATA[INSERT INTO anime.anime (name) VALUES ('Diamond no Ace');
+INSERT INTO anime.anime (name) VALUES ('Naruto');
+INSERT INTO anime.anime (name) VALUES ('DBZ');
+INSERT INTO anime.anime (name) VALUES ('Overload');
+INSERT INTO anime.anime (name) VALUES ('Cowboy Bebop');
+INSERT INTO anime.anime (name) VALUES ('Drifters');
+INSERT INTO anime.anime (name) VALUES ('Hellsing');
+INSERT INTO anime.anime (name) VALUES ('Berserk');
+INSERT INTO anime.anime (name) VALUES ('Golden Kamuy');
+INSERT INTO anime.anime (name) VALUES ('Grand Blue');]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
